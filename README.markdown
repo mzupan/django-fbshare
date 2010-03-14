@@ -13,7 +13,7 @@ project directory
 
 Then in settings.py add the following to your INSTALLED_APPS
 
-projectname.django-sharefb
+projectname.django-fbshare
 
 ## Usage
 
