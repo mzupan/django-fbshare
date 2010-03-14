@@ -1,5 +1,4 @@
 from django.template import Library, Node, TemplateSyntaxError, resolve_variable
-from django.http import HttpResponse
 
 register = Library()
 
@@ -31,9 +30,6 @@ class FBShare(Node):
             pass
         
     def render(self, context):
-        print self.type
-        print self.count
-        
         badge = """
         <a name="fb_share" type="%s%s" href="http://www.facebook.com/sharer.php">Share</a>
         <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
